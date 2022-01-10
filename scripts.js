@@ -1,4 +1,4 @@
-const photoCardSection = document.querySelector(".photo-cards");
+const photoCardSection = document.querySelector(".daily-cards");
 const url =
   "https://api.nasa.gov/planetary/apod?api_key=9tsSuySinTw0RdfxvfFvFnm7FqddSZcguRZ3LLwN&count=2";
 
