@@ -1,17 +1,49 @@
 html {
   height: 100%;
+  display: flex;
+  background-color: whitesmoke;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  background-color: bonewhite;
   font-family: "Courier New", Courier, monospace;
   font-style: normal;
   font-weight: 300;
-  color: black;
 }
+
+h1 {
+  padding: 0px;
+}
+.subtitle {
+  margin: 0;
+}
+
+article {
+  width: 50%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  border: lightgray 1px solid;
+  border-radius: 25px;
+  box-shadow: 2px 1px 0px 0px gainsboro;
+}
+
 img {
-  height: 25%;
-  width: 25%;
+  border-radius: 25px 25px 0px 0px;
+}
+
+h3 {
+  margin-left: 2%;
+}
+
+p {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+button {
+  padding: 10px;
+  margin: 20px;
+  width: 10%;
 }
