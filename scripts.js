@@ -1,24 +1,32 @@
 const photoCardSection = document.querySelector(".daily-cards");
 const url =
-  "https://api.nasa.gov/planetary/apod?api_key=9tsSuySinTw0RdfxvfFvFnm7FqddSZcguRZ3LLwN&count=2";
+  "https://api.nasa.gov/planetary/apod?api_key=9tsSuySinTw0RdfxvfFvFnm7FqddSZcguRZ3LLwN&count=10";
 
 const fetchData = fetch(url)
   .then((response) => response.json())
   .then((json) => {
     console.log(json);
+    const apodEntries = [];
     json.forEach((item) => {
-      const photoCard = createPhotoCard(
-        item.url,
-        item.title,
-        item.date,
-        item.explanation
-      );
-      photoCardSection.appendChild(photoCard);
+      apodEntries.push({
+        url: item.url,
+        title: item.title,
+        date: item.date,
+        explanation: item.explanation,
+      });
     });
+    renderEntries(apodEntries);
   })
   .catch((error) => console.log(error));
 
-function createPhotoCard(url, title, date, explanation) {
+function renderEntries(entries) {
+  entries
+    .map(createPhotoCard)
+    .forEach((card) => photoCardSection.appendChild(card));
+}
+
+function createPhotoCard(entry) {
+  const { url, title, date, explanation } = entry;
   const photoCardArticle = document.createElement("article");
   photoCardArticle.classList.add("photo-card");
   const img = document.createElement("img");
