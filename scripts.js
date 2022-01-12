@@ -1,6 +1,6 @@
 const photoCardSection = document.querySelector(".daily-cards");
 const url =
-  "https://api.nasa.gov/planetary/apod?api_key=9tsSuySinTw0RdfxvfFvFnm7FqddSZcguRZ3LLwN&count=10";
+  "https://api.nasa.gov/planetary/apod?api_key=9tsSuySinTw0RdfxvfFvFnm7FqddSZcguRZ3LLwN&count=2";
 
 const fetchData = fetch(url)
   .then((response) => response.json())
@@ -33,6 +33,17 @@ function createPhotoCard(url, title, date, explanation) {
   photoCardArticle.appendChild(description);
   const likeButton = document.createElement("button");
   likeButton.innerText = "Like";
+  likeButton.addEventListener("click", () => {
+    toggleLikes(likeButton);
+  });
   photoCardArticle.appendChild(likeButton);
   return photoCardArticle;
+}
+
+function toggleLikes(selectedButton) {
+  if (selectedButton.innerText === "Like") {
+    selectedButton.innerText = "Unlike";
+  } else if (selectedButton.innerText === "Unlike") {
+    selectedButton.innerText = "Like";
+  }
 }
