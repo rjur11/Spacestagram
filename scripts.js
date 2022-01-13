@@ -1,28 +1,45 @@
 const photoCardSection = document.querySelector(".daily-cards");
+const loader = document.querySelector(".rocket-ship");
 const url =
-  "https://api.nasa.gov/planetary/apod?api_key=9tsSuySinTw0RdfxvfFvFnm7FqddSZcguRZ3LLwN&count=10";
+  "https://api.nasa.gov/planetary/apod?api_key=9tsSuySinTw0RdfxvfFvFnm7FqddSZcguRZ3LLwN&count=3";
 
-const fetchData = fetch(url)
-  .then((response) => response.json())
-  .then((json) => {
-    console.log(json);
-    const apodEntries = [];
-    json.forEach((item) => {
-      apodEntries.push({
-        url: item.url,
-        title: item.title,
-        date: item.date,
-        explanation: item.explanation,
-      });
+window.addEventListener("load", () => {
+  fetchData().then((entries) => {
+    entries.forEach((entry) => {
+      photoCardSection.appendChild(createPhotoCard(entry));
     });
-    renderEntries(apodEntries);
-  })
-  .catch((error) => console.log(error));
+  });
+});
 
-function renderEntries(entries) {
-  entries
-    .map(createPhotoCard)
-    .forEach((card) => photoCardSection.appendChild(card));
+window.addEventListener("scroll", () => {
+  const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+  if (clientHeight + scrollTop >= scrollHeight - 5) {
+    loader.classList.remove("hidden");
+    fetchData().then((entries) => {
+      setTimeout(() => {
+        entries.forEach((entry) => {
+          photoCardSection.appendChild(createPhotoCard(entry));
+        });
+        loader.classList.add("hidden");
+      }, 2000);
+    });
+  }
+});
+
+function fetchData() {
+  return fetch(url)
+    .then((response) => response.json())
+    .then((json) => {
+      return json.map((item) => {
+        return {
+          url: item.url,
+          title: item.title,
+          date: item.date,
+          explanation: item.explanation,
+        };
+      });
+    })
+    .catch((error) => console.log(error));
 }
 
 function createPhotoCard(entry) {
@@ -54,4 +71,9 @@ function toggleLikes(selectedButton) {
   } else if (selectedButton.innerText === "Unlike") {
     selectedButton.innerText = "Like";
   }
+}
+
+function showLoader() {
+  loader.classList.remove("hidden");
+  setTimeout(renderEntries(fetchData), 1000);
 }

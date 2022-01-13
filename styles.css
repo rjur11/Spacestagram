@@ -48,3 +48,19 @@ button {
   margin: 20px;
   width: 10%;
 }
+
+.rocket-ship {
+  font-size: 20px;
+  animation-name: blink;
+  animation: blinker 0.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
