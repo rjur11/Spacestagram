@@ -21,7 +21,7 @@ window.addEventListener("scroll", () => {
           photoCardSection.appendChild(createPhotoCard(entry));
         });
         loader.classList.add("hidden");
-      }, 2000);
+      }, 1000);
     });
   }
 });
@@ -50,7 +50,7 @@ function createPhotoCard(entry) {
   img.src = url;
   img.alt = title;
   photoCardArticle.appendChild(img);
-  const titleBar = document.createElement("h3");
+  const titleBar = document.createElement("h2");
   titleBar.innerText = `${title} - ${date}`;
   photoCardArticle.appendChild(titleBar);
   const description = document.createElement("p");
@@ -71,9 +71,4 @@ function toggleLikes(selectedButton) {
   } else if (selectedButton.innerText === "Unlike") {
     selectedButton.innerText = "Like";
   }
-}
-
-function showLoader() {
-  loader.classList.remove("hidden");
-  setTimeout(renderEntries(fetchData), 1000);
 }
