@@ -4,6 +4,7 @@ html {
   background-color: whitesmoke;
 }
 
+/* *** Body and Header Section *** */
 body {
   display: flex;
   flex-direction: column;
@@ -32,12 +33,13 @@ article {
   box-shadow: 2px 1px 0px 0px gainsboro;
 }
 
+/* *** PhotoCard Section *** */
 img {
   border-radius: 25px 25px 0px 0px;
   object-fit: contain;
 }
 
-h3 {
+h2 {
   margin-left: 2%;
 }
 
@@ -52,6 +54,7 @@ button {
   width: 10%;
 }
 
+/* *** Loader Animation Section *** */
 .rocket-ship {
   font-size: 20px;
   animation-name: blink;
