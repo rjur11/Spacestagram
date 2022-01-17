@@ -29,7 +29,7 @@ This website takes data from the NASA Astronomy Photo of the Day API, and format
 - HTML
 - CSS
 - [NASA APOD API](https://api.nasa.gov/)
-
+- Project Structure Organized with [GitHub Project Board](https://github.com/rjur11/Spacestagram/projects/2)
 
 ## Installation and Set-Up
 
