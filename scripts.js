@@ -1,7 +1,6 @@
 const photoCardSection = document.querySelector(".daily-cards");
 const loader = document.querySelector(".rocket-ship");
-const url =
-  "https://api.nasa.gov/planetary/apod?api_key=9tsSuySinTw0RdfxvfFvFnm7FqddSZcguRZ3LLwN&count=3";
+import { fetchData } from "../apiCalls.js";
 
 window.addEventListener("load", () => {
   fetchData().then((entries) => {
@@ -26,23 +25,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-function fetchData() {
-  return fetch(url)
-    .then((response) => response.json())
-    .then((json) => {
-      return json.map((item) => {
-        return {
-          url: item.url,
-          title: item.title,
-          date: item.date,
-          explanation: item.explanation,
-        };
-      });
-    })
-    .catch((error) => console.log(error));
-}
-
-function createPhotoCard(entry) {
+const createPhotoCard = (entry) => {
   const { url, title, date, explanation } = entry;
   const photoCardArticle = document.createElement("article");
   photoCardArticle.classList.add("photo-card");
@@ -63,12 +46,12 @@ function createPhotoCard(entry) {
   });
   photoCardArticle.appendChild(likeButton);
   return photoCardArticle;
-}
+};
 
-function toggleLikes(selectedButton) {
+const toggleLikes = (selectedButton) => {
   if (selectedButton.innerText === "Like") {
     selectedButton.innerText = "Unlike";
   } else if (selectedButton.innerText === "Unlike") {
     selectedButton.innerText = "Like";
   }
-}
+};
