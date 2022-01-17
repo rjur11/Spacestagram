@@ -1,10 +1,10 @@
 
 # Spacestagram
 
-Shopify Front End Developer Intern Challenge - Summer 2022 
+*Shopify Front End Developer Intern Challenge - Summer 2022*
 
-- Click [HERE](https://docs.google.com/document/d/13zXpyrC2yGxoLXKktxw2VJG2Jw8SdUfliLM-bYQLjqE/edit#) to view the project spec.
-- Click [HERE](https://rjur11.github.io/Spacestagram/) to view the deployed site.
+- Click [HERE](https://docs.google.com/document/d/13zXpyrC2yGxoLXKktxw2VJG2Jw8SdUfliLM-bYQLjqE/edit#) to view the project spec
+- Click [HERE](https://rjur11.github.io/Spacestagram/) to view the deployed site
 
 ## Table of Contents
 - [Abstract](#abstract)
