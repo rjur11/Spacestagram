@@ -31,7 +31,7 @@ article {
   display: flex;
   flex-direction: column;
   border-radius: 25px;
-  box-shadow: 3px 0 3px -1px gainsboro;
+  box-shadow: 0.5px 0 10px 1px gainsboro;
 }
 
 /* *** PhotoCard Section *** */
@@ -65,6 +65,7 @@ button {
   font-size: 20px;
   animation-name: blink;
   animation: blinker 0.5s linear infinite;
+  padding-left: 13%;
 }
 
 @keyframes blinker {
