@@ -1,7 +1,8 @@
+import { fetchData } from "./apiCalls.js";
+import Photocard from "./Photocard.js";
+
 const photoCardSection = document.querySelector(".daily-cards");
 const loader = document.querySelector(".rocket-ship");
-import { fetchData } from "../apiCalls.js";
-import Photocard from "./Photocard.js";
 
 const addEntriesToPage = (entries) => {
   entries
