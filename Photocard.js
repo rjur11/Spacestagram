@@ -47,7 +47,6 @@ export default class Photocard {
     article.appendChild(this.#createTitleBar());
     article.appendChild(this.#createDescription());
     article.appendChild(this.#createLikeButton());
-    console.log(article.innerHTML);
     return article;
   }
 }
