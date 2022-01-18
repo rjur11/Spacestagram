@@ -15,7 +15,6 @@ const addEntriesToPage = (entries) => {
 const createScrollCallback = () => {
   let isRunning = false;
   return () => {
-    console.log(isRunning);
     if (isRunning) {
       return;
     }

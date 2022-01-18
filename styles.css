@@ -8,19 +8,21 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Courier New", Courier, monospace;
-  font-style: normal;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
+  margin-left: 33%;
 }
 
 h1 {
-  margin-bottom: 0px;
-  padding: 0px;
+  margin-bottom: 5px;
+  padding-left: 5px;
 }
 
 .subtitle {
   margin: 0px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+  color: #6b7177;
 }
 
 article {
@@ -28,9 +30,8 @@ article {
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  border: lightgray 1px solid;
   border-radius: 25px;
-  box-shadow: 2px 1px 0px 0px gainsboro;
+  box-shadow: 3px 0 3px -1px gainsboro;
 }
 
 /* *** PhotoCard Section *** */
@@ -40,7 +41,7 @@ article {
 }
 
 img {
-  border-radius: 25px 25px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
   object-fit: contain;
 }
 
