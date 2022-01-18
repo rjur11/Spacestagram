@@ -57,4 +57,16 @@ describe("Photocard", () => {
     expect(article.children[3].nodeName).to.equal("BUTTON");
     expect(article.children[3].innerText).to.equal("Like");
   });
+  it("Should handle Like button clicks", () => {
+    const card = new Photocard(data);
+    const article = card.getElement();
+    expect(article.children[3].nodeName).to.equal("BUTTON");
+    expect(article.children[3].innerText).to.equal("Like");
+    article.children[3].click();
+    expect(article.children[3].innerText).to.equal("Unlike");
+    expect(card.liked).to.equal(true);
+    article.children[3].click();
+    expect(article.children[3].innerText).to.equal("Like");
+    expect(card.liked).to.equal(false);
+  });
 });
