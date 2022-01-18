@@ -37,7 +37,7 @@ To install this project, please see below:
 
 ```bash
 1. Clone down this Repository using `git clone`
-2. Next, `cd` into the cloned repository and type `npm install` to install library dependancies
+2. Next, `cd` into the cloned repository and `npm install` to install library dependancies
 3. Finally, run `npm start` and open up http://localhost:8081/ in your browser to view the webpage
 ```
 Alternatively, you can access the deployed site here: https://rjur11.github.io/Spacestagram/
