@@ -54,22 +54,25 @@ Alternatively, you can access the deployed site here: https://rjur11.github.io/S
 
 
 ## See the Site in Action! 
+<img width="300" alt="Screen Shot 2022-01-18 at 1 35 12 PM" src="https://user-images.githubusercontent.com/69861203/149998030-297f520d-a2dd-4665-a50d-59822aff5e14.png">
+
+
 
 The user will be greeted with an initial group of three randomly populated photocards that can be navigated by scroll wheel on a mouse, or by tabbing through each card. Once the user reaches the end of the first three cards, an animated loader will appear, prompting the user to wait a second or two while more photocards populate.
 
-![Scroll or Tab Through the Site](https://media.giphy.com/media/01wMfH0jVHnMhvgXWy/giphy.gif)
+![Scroll or Tab Through the Site](https://media.giphy.com/media/rYjXUG4AHAPQJptqfz/giphy.gif)
 
 Uh oh! Sometimes images from the API will be broken. Alt text is provided to describe what the missing image conveys.
 
-<img width="300" alt="Spacestagramalt-text" src="https://user-images.githubusercontent.com/69861203/149710540-9a517c11-a33c-43f5-ba02-fccbcad09128.png">
+<img width="300" alt="Screen Shot 2022-01-18 at 1 31 40 PM" src="https://user-images.githubusercontent.com/69861203/149997760-3259466d-2b39-4209-904f-ffe37c6775fd.png">
 
 If a user finds a photocard that they really love, they can click the "Like" button associated with the photocard. However, if they change their mind, they can always go back and "unlike" any cards that were previously liked.
 
-![Like Button Functionality](https://media.giphy.com/media/7Cb5JO03rOpZhysmtx/giphy.gif)
+![Like Button Functionality](https://media.giphy.com/media/D2tS0a2VJAmVOyzzwN/giphy.gif)
 
 ## Future Goals
 
-- Ensure that infinite scrolling doesn't populate more cards than expected (three at a time). Sometimes if the mouse is bumped while the loader is active, it will load more than three cards.
+- Fix bug that sometimes loads the next set of images at a different size than the previous three
 - Create an "on page load" screen that lets a user know when API rendering is taking a little longer than expected
 
 ## Created By:
