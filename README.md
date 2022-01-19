@@ -67,7 +67,7 @@ Uh oh! Sometimes images from the API will be broken. Alt text is provided to des
 <img width="300" alt="Screen Shot 2022-01-19 at 11 26 43 AM" src="https://user-images.githubusercontent.com/69861203/150173106-c33a1385-1fc6-4d5b-bfca-e5998b6d6787.png">
 
 
-If a user finds a photocard that they really love, they can click the "Like" button associated with the photocard. However, if they change their mind, they can always go back and "unlike" any cards that were previously liked.
+If a user finds a photocard that they really love, they can click the "Like" button associated with the photocard. However, if they change their mind, they can always go back and "Unlike" any cards that were previously liked.
 
 ![Like Button Functionality](https://media.giphy.com/media/D2tS0a2VJAmVOyzzwN/giphy.gif)
 
