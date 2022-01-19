@@ -19,7 +19,7 @@
 
 This website takes data from the NASA Astronomy Photo of the Day API, and formats it into fun and informative photocards. Each photocard includes an image or video clip, title, date of posting, a description, and a "Like" button. 
 
-|<img width="250" alt="Spacestagram Photo-card" src="https://user-images.githubusercontent.com/69861203/149709252-cacb27dd-7bcb-442c-9240-4509922cfb02.png"> | 
+| <img width="250" alt="Screen Shot 2022-01-19 at 4 52 42 PM" src="https://user-images.githubusercontent.com/69861203/150219929-5ad7b1e6-3863-4b41-aceb-fb4e89493ec4.png">| 
 |:--:| 
 | *An Example Photocard* |
 
@@ -73,7 +73,6 @@ If a user finds a photocard that they really love, they can click the "Like" but
 
 ## Future Goals
 
-- Fix bug that sometimes loads the next set of images at a different size than the previous three
 - Create an "on page load" screen that lets a user know when API rendering is taking a little longer than expected
 
 ## Created By:
