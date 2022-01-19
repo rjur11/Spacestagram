@@ -5,12 +5,18 @@ html {
 }
 
 /* *** Body and Header Section *** */
+
 body {
+  width: 100vw;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  margin-left: 33%;
+  margin: auto;
+  width: 50%;
 }
 
 h1 {
@@ -26,7 +32,7 @@ h1 {
 }
 
 article {
-  width: 50%;
+  width: 100%;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -46,12 +52,12 @@ img {
 }
 
 h2 {
-  margin-left: 2%;
+  margin-left: 1rem;
 }
 
 p {
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 button {
@@ -61,11 +67,12 @@ button {
 }
 
 /* *** Loader Animation Section *** */
+
 .rocket-ship {
   font-size: 20px;
   animation-name: blink;
   animation: blinker 0.5s linear infinite;
-  padding-left: 13%;
+  text-align: center;
 }
 
 @keyframes blinker {

@@ -3,20 +3,25 @@
   <head>
     <title>Spacestagram</title>
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <header>
-    <h1>Spacestagram</h1>
-    <p class="subtitle">
-      Brought to you by NASA's Astronomy Photo of the Day (APOD) API
-    </p>
-  </header>
   <body>
-    <main class="daily-cards"></main>
-    <div class="loader">
-      <div class="rocket-ship hidden">🚀 Loading More Images... 🚀<div>
+    <div class="container">
+      <header>
+        <h1>Spacestagram</h1>
+        <p class="subtitle">
+          Brought to you by NASA's Astronomy Photo of the Day (APOD) API
+        </p>
+      </header>
+      <main class="daily-cards"></main>
+      <div class="loader">
+        <div class="rocket-ship hidden">🚀 Loading More Images... 🚀</div>
+      </div>
     </div>
     <script type="module" src="scripts.js"></script>
   </body>
