@@ -28,6 +28,7 @@ This website takes data from the NASA Astronomy Photo of the Day API, and format
 - JavaScript
 - HTML
 - CSS
+- Mocha Testing Framework, Chai Assertion Library, and JSDOM Library for Test Driven Development 
 - [NASA APOD API](https://api.nasa.gov/)
 - Project Structure Organized with [GitHub Project Board](https://github.com/rjur11/Spacestagram/projects/2)
 
