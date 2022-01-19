@@ -64,7 +64,8 @@ The user will be greeted with an initial group of three randomly populated photo
 
 Uh oh! Sometimes images from the API will be broken. Alt text is provided to describe what the missing image conveys.
 
-<img width="300" alt="Screen Shot 2022-01-18 at 1 31 40 PM" src="https://user-images.githubusercontent.com/69861203/149997760-3259466d-2b39-4209-904f-ffe37c6775fd.png">
+<img width="300" alt="Screen Shot 2022-01-19 at 11 26 43 AM" src="https://user-images.githubusercontent.com/69861203/150173106-c33a1385-1fc6-4d5b-bfca-e5998b6d6787.png">
+
 
 If a user finds a photocard that they really love, they can click the "Like" button associated with the photocard. However, if they change their mind, they can always go back and "unlike" any cards that were previously liked.
 
